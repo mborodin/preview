@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ervolit</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700%7COpen+Sans:300,300i,400,600,700,800"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/aos/aos.css">
+    <link rel="stylesheet" href="assets/css/swiper/swiper.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <header class="w-100">
+        <div class="container">
+            <div class="top-header d-none d-lg-flex justify-content-between text-white">
+                <p class="address"><i class="fa fa-map-marker"></i>PO Box 16122 Collins Street West</p>
+                <div class="contact d-flex">
+                    <i class="fa fa-phone"></i><a class="text-white"
+                        href="tel:+1200-0989-568-331">+(1200)-0989-568-331</a>
+                    <p><i class="fa fa-clock-o"></i>Mon - Sat: 8:00 am to 7:00 pm</p>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Ervolit"></a>
+                <div class="group d-flex align-items-center">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <a class="user" href="#"><i class="fa fa-user"></i></a>
+                </div>
+                <a class="search-icon d-none d-lg-block" href="#"><i class="fa fa-search"></i></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                    <form class="bg-white search-form" method="get" id="searchform">
+                        <div class="input-group">
+                            <input class="field form-control" id="s" name="s" type="text" placeholder="Search">
+                            <span class="input-group-btn">
+                                <input class="submit btn btn-primary" id="searchsubmit" name="submit" type="submit"
+                                    value="Search">
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="hero login-register" id="particles-js">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-4">
+                    <div class="login height-ctrl">
+                        <h2>Login</h2>
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="lemail" placeholder="Email Adress">
+                                <a href="#">Forgot ?</a>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="lpass" placeholder="Password">
+                                <a href="#">Forgot ?</a>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="lcheck">
+                                <label class="form-check-label" for="lcheck">Stay logged in</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Log In <i
+                                    class="fa fa-angle-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="register height-ctrl">
+                        <h2>Login</h2>
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="rname" placeholder="Your Full Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="remail" placeholder="Email Address">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="rpass" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="rrpass" placeholder="Retype Password">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="rcheck">
+                                <label class="form-check-label" for="rcheck">You agree to the Terms of Service and
+                                    Privacy Policy</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Create An Account <i
+                                    class="fa fa-angle-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="clouds" class="d-none d-sm-block">
+            <div class=" layer cloud1" data-depth-x="0.20" data-depth-y="0.00">
+                <div class="cloud1-img"></div>
+            </div>
+            <div class="layer cloud2" data-depth-x="0.15" data-depth-y="0.00">
+                <div class="cloud2-img"></div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/zepto.parallax.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
