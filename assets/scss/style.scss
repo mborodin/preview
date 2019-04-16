@@ -13,6 +13,18 @@ header {
   margin-bottom: 6px;
 }
 .navbar-collapse {
+  .search-form {
+    input[type="text"] {
+      border: 1px solid #ced4da;
+      color: #333;
+      padding: 1.5625rem 0.625rem;
+    }
+    .btn {
+      margin-top: 0;
+      border-radius: 0;
+      margin-left: -1px;
+    }
+  }
   .nav-link {
     font-size: 1.125rem;
     font-weight: $font-weight-bold;
@@ -323,10 +335,10 @@ header {
 }
 
 .free-consult {
-  padding: 100px 0;
+  padding: 50px 0 100px;
   background: transparent url(../images/free-consult-bg.png) no-repeat 0 0;
   .title {
-    margin-bottom: 330px;
+    margin-bottom: 200px;
     h2 {
       color: $white;
       &::after {
@@ -336,6 +348,9 @@ header {
     h4 {
       color: $white;
     }
+  }
+  .sub-heading {
+    font-size: 20px;
   }
   .media {
     color: $black;
@@ -606,9 +621,9 @@ form {
 }
 
 .page-info {
-  padding: 26% 0 58%;
+  padding: 40% 0 16%;
   .page-title {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 800;
     color: $white;
   }
@@ -672,8 +687,8 @@ form {
 }
 
 .blog {
-  padding: 120px 0;
-  background: url("../images/about-us-bg.png") no-repeat 70% 0%,
+  padding: 70px 0 120px;
+  background: url("../images/about-us-bg.png") no-repeat 70% 10%,
     linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
   .nav {
     li {
@@ -768,7 +783,7 @@ form {
     }
     .date {
       position: absolute;
-      right: 60%;
+      right: 0;
       top: 0;
     }
   }
@@ -888,7 +903,7 @@ form {
   }
 }
 .single-page {
-  background: url("../images/about-us-bg.png") no-repeat 70% 0%,
+  background: url("../images/about-us-bg.png") no-repeat 70% 10%,
     linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
 }
 .single-post-details {

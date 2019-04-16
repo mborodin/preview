@@ -8,6 +8,18 @@ header {
   margin-bottom: 6px;
 }
 
+.navbar-collapse .search-form input[type="text"] {
+  border: 1px solid #ced4da;
+  color: #333;
+  padding: 1.5625rem 0.625rem;
+}
+
+.navbar-collapse .search-form .btn {
+  margin-top: 0;
+  border-radius: 0;
+  margin-left: -1px;
+}
+
 .navbar-collapse .nav-link {
   font-size: 1.125rem;
   font-weight: 700;
@@ -383,12 +395,12 @@ header {
 }
 
 .free-consult {
-  padding: 100px 0;
+  padding: 50px 0 100px;
   background: transparent url(../images/free-consult-bg.png) no-repeat 0 0;
 }
 
 .free-consult .title {
-  margin-bottom: 330px;
+  margin-bottom: 200px;
 }
 
 .free-consult .title h2 {
@@ -401,6 +413,10 @@ header {
 
 .free-consult .title h4 {
   color: #fff;
+}
+
+.free-consult .sub-heading {
+  font-size: 20px;
 }
 
 .free-consult .media {
@@ -699,11 +715,11 @@ form .btn::after {
 }
 
 .page-info {
-  padding: 26% 0 58%;
+  padding: 40% 0 16%;
 }
 
 .page-info .page-title {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 800;
   color: #fff;
 }
@@ -788,8 +804,8 @@ form .btn::after {
 }
 
 .blog {
-  padding: 120px 0;
-  background: url("../images/about-us-bg.png") no-repeat 70% 0%, linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
+  padding: 70px 0 120px;
+  background: url("../images/about-us-bg.png") no-repeat 70% 10%, linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
 }
 
 .blog .nav li {
@@ -896,7 +912,7 @@ form .btn::after {
 
 .blog .media-body .date {
   position: absolute;
-  right: 60%;
+  right: 0;
   top: 0;
 }
 
@@ -1028,7 +1044,7 @@ form .btn::after {
 }
 
 .single-page {
-  background: url("../images/about-us-bg.png") no-repeat 70% 0%, linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
+  background: url("../images/about-us-bg.png") no-repeat 70% 10%, linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
 }
 
 .single-post-details {

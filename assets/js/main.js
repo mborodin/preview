@@ -8,12 +8,6 @@
             disable: 'mobile'
         });
 
-        // == Clouds Parallax== //
-        if ($('#clouds').length) {
-            var scene = document.getElementById('clouds');
-            var parallax = new Parallax(scene);
-        }
-
         // == Particle JS== //
         if ($('#particles-js').length) {
             particlesJS.load('particles-js', 'assets/js/particles.json', function () { });
