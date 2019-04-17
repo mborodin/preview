@@ -6,6 +6,7 @@
 @include media-breakpoint-up(sm) {
   .hero {
     .slide-content {
+      min-height: 500px;
       h4 {
         font-size: 20px;
       }
@@ -50,7 +51,7 @@
       font-size: 24px;
     }
   }
-  .blog {
+  .blog-posts {
     .media-body {
       .date {
         right: 20%;
@@ -59,14 +60,81 @@
     .nav {
       li {
         padding: 15px;
+        font-size: 16px;
       }
     }
   }
 }
 
 @include media-breakpoint-up(md) {
+  .navbar-brand {
+    img {
+      width: 100px;
+    }
+  }
+  .navbar-collapse {
+    .nav-link {
+      font-size: 1rem;
+    }
+    .search-form {
+      padding: 10px;
+      position: absolute;
+      right: 0;
+      top: 100%;
+      display: none;
+      opacity: 0;
+      transition: all 0.35s ease-in-out;
+      &.show {
+        display: block;
+        opacity: 1;
+      }
+      input[type="text"] {
+        border: 1px solid #ced4da;
+        color: $gray-800;
+        padding: 0.625rem 0.625rem;
+      }
+      .btn {
+        margin-top: 0;
+      }
+      input[type="submit"] {
+        border: 1px solid #ced4da;
+        padding: 0.8125rem 2.5rem;
+        margin-left: -1px;
+        border-radius: 0;
+      }
+    }
+  }
+  .group {
+    order: 1;
+  }
+  .user,
+  .search-icon {
+    font-size: 1.5rem;
+    &:hover {
+      color: $primary;
+    }
+  }
+  .user {
+    margin-right: 10px;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 2.5rem;
+      background-color: $gray-200;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 10px;
+    }
+  }
+  .search-icon {
+    margin-left: 10px;
+    order: 2;
+  }
   .hero {
     .slide-content {
+      min-height: 600px;
       h4 {
         font-size: 24px;
       }
@@ -97,6 +165,7 @@
   .sub-title {
     font-size: 40px;
   }
+
   .login-register {
     h2 {
       padding: 40px 0 25px;
@@ -114,7 +183,7 @@
       height: 400px;
     }
   }
-  .blog {
+  .blog-posts {
     .nav {
       li {
         padding: 20px;
@@ -171,33 +240,13 @@
     padding: 0.5rem 3.125rem;
   }
   .navbar-collapse {
-    .search-form {
-      padding: 10px;
-      position: absolute;
-      right: 0;
-      top: 100%;
-      display: none;
-      opacity: 0;
-      transition: all 0.35s ease-in-out;
-      &.show {
-        display: block;
-        opacity: 1;
-      }
-      input[type="text"] {
-        border: 1px solid #ced4da;
-        color: $gray-800;
-        padding: 0.625rem 0.625rem;
-      }
-      .btn {
-        margin-top: 0;
-      }
-      input[type="submit"] {
-        border: 1px solid #ced4da;
-        padding: 0.8125rem 2.5rem;
-        margin-left: -1px;
-        border-radius: 0;
-      }
+    .nav-link {
+      font-size: 1.125rem;
     }
+  }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0.875rem;
+    padding-left: 0.875rem;
   }
   .group {
     order: 1;
@@ -229,6 +278,8 @@
   }
   .hero {
     .slide-content {
+      min-height: 600px;
+      margin-top: 125px;
       h3 {
         font-size: 65px;
       }
@@ -249,7 +300,13 @@
   .sub-title {
     font-size: 48px;
   }
+
   .about-us {
+    background: url("../images/about-us-bg.png") no-repeat 45% 25%,
+      linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
+    .title {
+      margin-bottom: 70px;
+    }
     .img-container {
       background-color: rgb(153, 153, 153);
       box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.45);
@@ -275,12 +332,17 @@
     }
   }
   .page-info {
-    padding: 25% 0 12%;
+    padding: 15% 0 5%;
     .page-title {
       font-size: 60px;
     }
   }
   .contact-info {
+    background: url("../images/contact-us-bg.png") no-repeat 70% 0%,
+      linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
+    h2 {
+      font-size: 53px;
+    }
     .contact-img {
       width: 450px;
       height: 450px;
@@ -288,9 +350,9 @@
     }
   }
   .sidebar {
-    margin-top: 100px;
+    margin-top: 75px;
   }
-  .blog {
+  .blog-posts {
     padding: 120px 0;
     .media-body {
       .date {
@@ -299,7 +361,7 @@
     }
     .nav {
       li {
-        padding: 25px;
+        padding: 12px 16px;
       }
     }
   }
@@ -323,7 +385,12 @@
   .navbar {
     padding: 0.5rem 4.375rem;
   }
-  .navbar-expand-lg .navbar-nav .nav-link {
+  .navbar-brand {
+    img {
+      width: auto;
+    }
+  }
+  .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 1.375rem;
     padding-left: 1.375rem;
   }
@@ -333,25 +400,53 @@
     }
   }
   .contact-info {
+    h2 {
+      font-size: 60px;
+    }
     .contact-img {
       width: 540px;
       height: 540px;
     }
   }
+  .blog-posts {
+    .nav {
+      li {
+        padding: 20px 25px;
+      }
+    }
+  }
+  .sidebar {
+    margin-top: 87px;
+  }
 }
 
 @include media-breakpoint-up(xxl) {
+  .free-consult {
+    .media {
+      &:first-of-type {
+        margin-top: 50px;
+      }
+    }
+  }
   .contact-info {
     .contact-img {
       width: 690px;
       height: 690px;
     }
   }
-  .blog {
+  .blog-posts {
+    .nav {
+      li {
+        padding: 25px;
+      }
+    }
     .media-body {
       .date {
         right: 60%;
       }
     }
+  }
+  .sidebar {
+    margin-top: 100px;
   }
 }

@@ -57,7 +57,7 @@ header {
   }
 
   .slide-content {
-    min-height: 100vh;
+    min-height: 480px;
     color: $white;
     span {
       color: $primary;
@@ -99,62 +99,11 @@ header {
   .arr-right {
     right: 0;
   }
-  #clouds {
-    position: absolute;
-    overflow: hidden;
-    bottom: 0;
-  }
-  #clouds,
-  .layer {
-    height: 100vh;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    z-index: 5;
-  }
-  .layer {
-    div {
-      background: transparent repeat-x;
-      position: absolute;
-      width: 300%;
-      transform: translate3d(0, 0, 0);
-      transform-style: preserve-3d;
-      backface-visibility: hidden;
-    }
-  }
 
-  .cloud1 {
-    z-index: 3;
-    .cloud1-img {
-      background: url("../images/cloud-1.png");
-      animation: cloud 4s 0.1s infinite linear;
-      left: -96%;
-      bottom: -411px;
-      height: 100vh;
-    }
-  }
-  .cloud2 {
-    z-index: 2;
-    .cloud2-img {
-      background: transparent url("../images/cloud-2.png") repeat-x center;
-      animation: cloud 4.88889s 0.1s infinite linear;
-      left: -36%;
-      bottom: -295px;
-      height: 100vh;
-    }
-  }
   canvas {
     position: absolute;
     top: 0;
     z-index: 2;
-  }
-}
-@keyframes cloud {
-  0% {
-    transform: rotateZ(0deg) translate3d(0, 1%, 0) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateZ(360deg) translate3d(0, 1%, 0) rotateZ(-360deg);
   }
 }
 
@@ -210,10 +159,10 @@ header {
 }
 .about-us {
   padding: 115px 0 67px;
-  background: url("../images/about-us-bg.png") no-repeat 45% 25%,
-    linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
+  padding: 50px 0;
+  background: linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
   .title {
-    margin-bottom: 70px;
+    margin-bottom: 0;
   }
   .sub-title {
     margin-top: 50px;
@@ -226,7 +175,7 @@ header {
   }
   .btn {
     margin-top: 5px;
-    margin-bottom: 160px;
+    margin-bottom: 60px;
   }
   .img-container {
     background-color: rgb(153, 153, 153);
@@ -235,7 +184,8 @@ header {
 }
 .consult {
   background-color: $primary;
-  padding: 30px 0;
+  padding: 30px 0 33px;
+  margin-bottom: -3px;
 }
 
 .consult-slider {
@@ -630,12 +580,11 @@ form {
 }
 .contact-info {
   padding: 100px 0;
-  background: url("../images/about-us-bg.png") no-repeat 70% 0%,
-    linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
+  background: linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
   .title {
     text-align-last: left;
     h3 {
-      font-size: 40px;
+      font-size: 30px;
     }
     h2 {
       margin-bottom: 40px;
@@ -686,7 +635,7 @@ form {
   }
 }
 
-.blog {
+.blog-posts {
   padding: 70px 0 120px;
   background: url("../images/about-us-bg.png") no-repeat 70% 10%,
     linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
@@ -694,6 +643,7 @@ form {
     li {
       padding: 10px;
       font-family: $font-family-monospace;
+      font-size: 14px;
       font-weight: 800;
       color: $blue;
       text-transform: uppercase;
@@ -840,6 +790,9 @@ form {
         &:first-child {
           color: #999;
         }
+        &:last-child {
+          margin-left: 45px;
+        }
       }
     }
   }
@@ -903,7 +856,7 @@ form {
   }
 }
 .single-page {
-  background: url("../images/about-us-bg.png") no-repeat 70% 10%,
+  background: url("../images/single-bg.png") no-repeat 70% 10%,
     linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
 }
 .single-post-details {

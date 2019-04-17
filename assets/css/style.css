@@ -57,7 +57,7 @@ header {
 }
 
 .hero .slide-content {
-  min-height: 100vh;
+  min-height: 480px;
   color: #fff;
 }
 
@@ -110,85 +110,10 @@ header {
   right: 0;
 }
 
-.hero #clouds {
-  position: absolute;
-  overflow: hidden;
-  bottom: 0;
-}
-
-.hero #clouds,
-.hero .layer {
-  height: 100vh;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  z-index: 5;
-}
-
-.hero .layer div {
-  background: transparent repeat-x;
-  position: absolute;
-  width: 300%;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.hero .cloud1 {
-  z-index: 3;
-}
-
-.hero .cloud1 .cloud1-img {
-  background: url("../images/cloud-1.png");
-  -webkit-animation: cloud 4s 0.1s infinite linear;
-          animation: cloud 4s 0.1s infinite linear;
-  left: -96%;
-  bottom: -411px;
-  height: 100vh;
-}
-
-.hero .cloud2 {
-  z-index: 2;
-}
-
-.hero .cloud2 .cloud2-img {
-  background: transparent url("../images/cloud-2.png") repeat-x center;
-  -webkit-animation: cloud 4.88889s 0.1s infinite linear;
-          animation: cloud 4.88889s 0.1s infinite linear;
-  left: -36%;
-  bottom: -295px;
-  height: 100vh;
-}
-
 .hero canvas {
   position: absolute;
   top: 0;
   z-index: 2;
-}
-
-@-webkit-keyframes cloud {
-  0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0, 1%, 0) rotateZ(0deg);
-            transform: rotateZ(0deg) translate3d(0, 1%, 0) rotateZ(0deg);
-  }
-  100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0, 1%, 0) rotateZ(-360deg);
-            transform: rotateZ(360deg) translate3d(0, 1%, 0) rotateZ(-360deg);
-  }
-}
-
-@keyframes cloud {
-  0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0, 1%, 0) rotateZ(0deg);
-            transform: rotateZ(0deg) translate3d(0, 1%, 0) rotateZ(0deg);
-  }
-  100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0, 1%, 0) rotateZ(-360deg);
-            transform: rotateZ(360deg) translate3d(0, 1%, 0) rotateZ(-360deg);
-  }
 }
 
 .title {
@@ -252,11 +177,12 @@ header {
 
 .about-us {
   padding: 115px 0 67px;
-  background: url("../images/about-us-bg.png") no-repeat 45% 25%, linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
+  padding: 50px 0;
+  background: linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
 }
 
 .about-us .title {
-  margin-bottom: 70px;
+  margin-bottom: 0;
 }
 
 .about-us .sub-title {
@@ -273,7 +199,7 @@ header {
 
 .about-us .btn {
   margin-top: 5px;
-  margin-bottom: 160px;
+  margin-bottom: 60px;
 }
 
 .about-us .img-container {
@@ -283,7 +209,8 @@ header {
 
 .consult {
   background-color: #8ec641;
-  padding: 30px 0;
+  padding: 30px 0 33px;
+  margin-bottom: -3px;
 }
 
 .consult-slider {
@@ -726,7 +653,7 @@ form .btn::after {
 
 .contact-info {
   padding: 100px 0;
-  background: url("../images/about-us-bg.png") no-repeat 70% 0%, linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
+  background: linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
 }
 
 .contact-info .title {
@@ -734,7 +661,7 @@ form .btn::after {
 }
 
 .contact-info .title h3 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .contact-info .title h2 {
@@ -803,31 +730,32 @@ form .btn::after {
   color: #999;
 }
 
-.blog {
+.blog-posts {
   padding: 70px 0 120px;
   background: url("../images/about-us-bg.png") no-repeat 70% 10%, linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
 }
 
-.blog .nav li {
+.blog-posts .nav li {
   padding: 10px;
   font-family: "Open Sans", sans-serif;
+  font-size: 14px;
   font-weight: 800;
   color: #163d61;
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
 }
 
-.blog .nav li:hover, .blog .nav li.is-checked {
+.blog-posts .nav li:hover, .blog-posts .nav li.is-checked {
   cursor: pointer;
   color: #8ec641;
   text-decoration: underline;
 }
 
-.blog .card {
+.blog-posts .card {
   margin-top: 30px;
 }
 
-.blog .pagination {
+.blog-posts .pagination {
   margin-top: 60px;
   font-size: 14px;
   font-weight: 600;
@@ -835,7 +763,7 @@ form .btn::after {
   margin-bottom: 100px;
 }
 
-.blog .prv {
+.blog-posts .prv {
   position: absolute;
   left: 50%;
   top: 100%;
@@ -844,11 +772,11 @@ form .btn::after {
   margin-top: 10px;
 }
 
-.blog .prv i {
+.blog-posts .prv i {
   margin-right: 10px;
 }
 
-.blog .nxt {
+.blog-posts .nxt {
   position: absolute;
   right: 50%;
   top: 100%;
@@ -857,19 +785,19 @@ form .btn::after {
   margin-top: 10px;
 }
 
-.blog .nxt i {
+.blog-posts .nxt i {
   margin-left: 10px;
 }
 
-.blog .meta {
+.blog-posts .meta {
   padding: 25px 20px;
   margin-bottom: 100px;
   background-color: #fefefe;
   border: 1px solid #f0f0f0;
 }
 
-.blog .meta a,
-.blog .meta span {
+.blog-posts .meta a,
+.blog-posts .meta span {
   margin-right: 45px;
   color: #333;
   font-size: 20px;
@@ -877,46 +805,46 @@ form .btn::after {
   font-style: italic;
 }
 
-.blog .cmnt:first-of-type {
+.blog-posts .cmnt:first-of-type {
   border-top: 1px solid #dfdfdf;
   margin-top: 45px;
   padding-top: 35px;
 }
 
-.blog .cmnt .avatar {
+.blog-posts .cmnt .avatar {
   width: 67px;
   height: 67px;
   border-radius: 50%;
 }
 
-.blog .media-body {
+.blog-posts .media-body {
   position: relative;
 }
 
-.blog .media-body h5 a {
+.blog-posts .media-body h5 a {
   font-size: 16px;
   font-weight: 800;
   color: #333;
 }
 
-.blog .media-body h5 a:hover {
+.blog-posts .media-body h5 a:hover {
   color: #8ec641;
   text-decoration: none;
 }
 
-.blog .media-body a {
+.blog-posts .media-body a {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: #999;
 }
 
-.blog .media-body .date {
+.blog-posts .media-body .date {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.blog .form-title {
+.blog-posts .form-title {
   font-size: 18px;
   font-weight: 800;
   margin-top: 100px;
@@ -974,6 +902,10 @@ form .btn::after {
 
 .sidebar .recent-news p a:first-child {
   color: #999;
+}
+
+.sidebar .recent-news p a:last-child {
+  margin-left: 45px;
 }
 
 .sidebar .categories a {
@@ -1044,7 +976,7 @@ form .btn::after {
 }
 
 .single-page {
-  background: url("../images/about-us-bg.png") no-repeat 70% 10%, linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
+  background: url("../images/single-bg.png") no-repeat 70% 10%, linear-gradient(0deg, #ffffff 0%, #e0ebf6 82%, #d9e7f4 100%);
 }
 
 .single-post-details {

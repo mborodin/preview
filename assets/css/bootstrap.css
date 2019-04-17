@@ -4485,7 +4485,7 @@ input[type="button"].btn-block {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #333;
+  color: #8ec641;
 }
 
 .navbar-light .navbar-toggler {
@@ -4502,11 +4502,11 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-text a {
-  color: #333;
+  color: #8ec641;
 }
 
 .navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
-  color: #333;
+  color: #8ec641;
 }
 
 .navbar-dark .navbar-brand {
